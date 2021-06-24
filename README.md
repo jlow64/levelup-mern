@@ -17,6 +17,7 @@ To access the mongodb container database, use
 then to create an example db that the model can use:
 
 docker exec -it "container name/id" bash
+
 mongo
 
 use merndb
