@@ -14,8 +14,8 @@ const App = () => {
  
   return (
     <div>
-      <h1>MERN Stack</h1>
-      {users.map(u => <h4 key={u._id}>userName : {u.userName}</h4>)}
+      <h1>Education Portal Application</h1>
+      {users.map(u => <h4 key={u._id}>firstName : {u.firstName} schoolName : {u.schoolName} email: {u.email} interested_Course: {u.interestedCourse} </h4>)}
     </div>
   )
 }

@@ -4,14 +4,18 @@ const Schema = mongoose.Schema
 const User = new Schema({
     firstName: {
         type: String,
+        required: true
     },
-    secondName:{
+    lastName:{
         type: String,
     },
-    userName: {
+    phoneNumber: {
         type: String,
-        required: true,
-        unique:true
+        required: true
+    },
+    schoolName: {
+        type: String,
+        required: true
     },
     email: {
         type: String,
@@ -22,10 +26,27 @@ const User = new Schema({
         type: String,
         required: true
     },
-    isAdmin: {
-        type: Boolean,
+    parentName: {
+        type: String,
+        required: true
+    },
+    parentPhoneNumber: {
+        type: String,
+        required: true
+    },
+    parentEmail: {
+        type: String,
         required: true,
-        default: false
+        unique: true
+    },
+    interestedCourse: {
+        type: String
+    },
+    preferredStartDate: {
+        type: String
+    },
+    referalSource: {
+        type: String
     },
 }, {
     timestamps: true
