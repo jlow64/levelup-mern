@@ -18,8 +18,11 @@ then to create an example db that the model can use:
 
 docker exec -it "container name/id" bash
 mongo
+
 use merndb
+
 db.createCollection("users")
+
 db.users.insertMany(
 [{
   "_id": ObjectId("5fd21021d230812954b4b49a"),
