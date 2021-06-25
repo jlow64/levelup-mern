@@ -6,6 +6,6 @@ const ClassInformation = () => {
             <h1>Class Information</h1>
         </div>
     );
-}
+};
 
 export default ClassInformation;

@@ -13,7 +13,9 @@
 .awards,
 .class_information,
 .log_out {
+  color: black;
   display: flex;
+  margin-left: 250px;
   height: 90vh;
   align-items: center;
   justify-content: center;

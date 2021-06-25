@@ -6,6 +6,6 @@ const Scratch = () => {
             <h1>Scratch</h1>
         </div>
     );
-}
+};
 
 export default Scratch;

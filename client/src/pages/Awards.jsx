@@ -6,6 +6,6 @@ const Awards = () => {
             <h1>My Awards</h1>
         </div>
     );
-}
+};
 
 export default Awards;

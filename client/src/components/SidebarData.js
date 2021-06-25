@@ -42,7 +42,7 @@ export const SidebarData = [
     },
     {
         title: 'Log Out',
-        path: '/login',
+        path: '/',
         icon: <IoIcons.IoLogOutOutline />,
         className: 'nav-text',
         logout: true

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import apis from './api/index';
 import Navbar from './components/Navbar';
 import './App.css';
@@ -36,19 +36,19 @@ const App = () => {
     );
   } else {
     return (
-      <div>
+      <>
         <Router>
           <Navbar logout={logout} />
           <Switch>
-            <Route path='/' />
-            <Route path='/dashboard' component={Dashboard} />
-            <Route path='/scratch' component={Scratch} />
-            <Route path='/projects' component={Projects} />
-            <Route path='/awards' component={Awards} />
-            <Route path='/class_information' component={ClassInformation} />
+            <Route exact path='/' />
+            <Route path='/dashboard' exact component={Dashboard} />
+            <Route path='/scratch' exact component={Scratch} />
+            <Route path='/projects' exact component={Projects} />
+            <Route path='/awards' exact component={Awards} />
+            <Route path='/class_information' exact component={ClassInformation} />
           </Switch>
         </Router>
-      </div>
+      </>
     );
   }
 }

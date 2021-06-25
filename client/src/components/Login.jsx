@@ -27,8 +27,10 @@ export default function Login(props) {
 
   return (
     <div className="Login">
-      <h1>Levelup <br/> Works</h1>
       <Form onSubmit={handleSubmit}>
+        <Form.Group size="lg" controlId="header">
+          <Form.Label>Levelup <br/> Works</Form.Label>
+        </Form.Group>
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>
           <Form.Control
