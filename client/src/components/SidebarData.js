@@ -9,36 +9,42 @@ export const SidebarData = [
         title: 'Dashboard',
         path: '/dashboard',
         icon: <RiIcons.RiDashboardLine />,
-        className: 'nav-text'
+        className: 'nav-text',
+        logout: false
     },
     {
         title: 'Scratch',
         path: '/scratch',
         icon: <IoIcons.IoRocketOutline />,
-        className: 'nav-text'
+        className: 'nav-text',
+        logout: false
     },
     {
         title: 'My Projects',
         path: '/projects',
         icon: <AiIcons.AiOutlineProject />,
-        className: 'nav-text'
+        className: 'nav-text',
+        logout: false
     },
     {
         title: 'My Awards',
         path: '/awards',
         icon: <AiIcons.AiOutlineStar />,
-        className: 'nav-text'
+        className: 'nav-text',
+        logout: false
     },
     {
         title: 'Class Information',
         path: '/class_information',
         icon: <BiIcons.BiMessageError />,
-        className: 'nav-text'
+        className: 'nav-text',
+        logout: false
     },
     {
         title: 'Log Out',
-        path: '/',
+        path: '/login',
         icon: <IoIcons.IoLogOutOutline />,
-        className: 'nav-text'
+        className: 'nav-text',
+        logout: true
     }
 ]
