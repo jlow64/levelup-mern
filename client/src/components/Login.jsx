@@ -17,6 +17,7 @@ export default function Login(props) {
       props.successLogin();
     } else {
       alert("Please Try Again!")
+      setPassword("");
     }
   }
 
