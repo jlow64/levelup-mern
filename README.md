@@ -24,11 +24,13 @@ use merndb
 
 db.createCollection("users")
 
+
 db.users.insertMany(
 [{
   "_id": ObjectId("5fd21021d230812954b4b49a"),
   "firstName": "Manish",
   "lastName": "Mandal",
+  "dateofbirth": "12/04/1997",
   "phoneNumber" : "02216747586",
   "schoolName": "MissionReadyHQ",
   "email": "admin@gmail.com",
@@ -36,6 +38,7 @@ db.users.insertMany(
   "parentName": "Joanne",
   "parentPhoneNumber": "02102354327",
   "parentEmail": "parent1@gmail.com",
+  "interests": "playing games",
   "interestedCourse": "cloud computing",
   "preferredStartDate": "20/04/2022",
   "referalSource": "online"
@@ -43,6 +46,7 @@ db.users.insertMany(
   "_id": ObjectId("5fd21f60d230812954b4b49b"),
   "firstName": "John",
   "lastName": "Doe",
+  "dateofbirth": "12/04/1997",
   "phoneNumber": "02214485573",
   "schoolName": "MissionReadyHQ", 
   "email": "johndoe@gmail.com",
@@ -50,6 +54,7 @@ db.users.insertMany(
   "parentName": "Bob",
   "parentPhoneNumber": "02136475739",
   "parentEmail": "parent2@gmail.com",
+  "interests": "playing games",
   "interestedCourse": "cloud computing",
   "preferredStartDate": "20/04/2022",
   "referalSource": "news"
@@ -57,6 +62,7 @@ db.users.insertMany(
   "_id": ObjectId("5fd21f82d230812954b4b49c"),
   "firstName": "Demo",
   "lastName": "test",
+  "dateofbirth": "12/04/1997",
   "phoneNumber": "02257689475",
   "schoolName": "MissionReadyHQ",
   "email": "demo@gmail.com",
@@ -64,11 +70,8 @@ db.users.insertMany(
   "parentName": "Demotester",
   "parentPhoneNumber": "02136475739",
   "parentEmail": "testdemo@gmail.com",
+  "interests": "demo",
   "interestedCourse": "demo",
   "preferredStartDate": "20/04/2022",
   "referalSource": "online"
 }])
-
-
-
-
