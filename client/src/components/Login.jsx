@@ -27,6 +27,7 @@ export default function Login(props) {
 
   return (
     <div className="Login">
+      <h1>Levelup <br/> Works</h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>

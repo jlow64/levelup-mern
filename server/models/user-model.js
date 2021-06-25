@@ -8,6 +8,11 @@ const User = new Schema({
     },
     lastName:{
         type: String,
+        required: true
+    },
+    dateofbirth:{
+        type: String,
+        required: true
     },
     phoneNumber: {
         type: String,
@@ -38,6 +43,9 @@ const User = new Schema({
         type: String,
         required: true,
         unique: true
+    },
+    interests: {
+        type: String,
     },
     interestedCourse: {
         type: String

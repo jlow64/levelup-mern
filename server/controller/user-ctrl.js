@@ -53,6 +53,7 @@ updateUser = asyncHandler(async (req, res) => {
         }
         user.firstName = body.firstName
         user.lastName = body.lastName
+        user.dateofbirth = body.dateofbirth
         user.phoneNumber = body.phoneNumber
         user.schoolName = body.schoolName
         user.email = body.email
@@ -60,6 +61,7 @@ updateUser = asyncHandler(async (req, res) => {
         user.parentName = body.parentName
         user.parentPhoneNumber = body.parentPhoneNumber
         user.parentEmail = body.parentEmail
+        user.interests = body.interests
         user.interestedCourse = body.interestedCourse
         user.preferredStartDate = body.preferredStartDate
         user.referalSource = body.referalSource
