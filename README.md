@@ -1,4 +1,4 @@
-# mission6-mern-docker
+# levelup-mern-docker
 MERN stack utilising docker containers 
 
 Setup:
