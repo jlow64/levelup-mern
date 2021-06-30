@@ -1,11 +1,12 @@
 .menu-bars {
+    background-color: #762DBE;
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
 }
 
 .nav-menu {
-    background-color: rgb(49, 49, 49);
+    background-color: #762DBE;
     width: 250px;
     height: 100vh;
     display: flex;
@@ -14,22 +15,28 @@
     top: 0;
     left: 0;
     transition: 850ms;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-right-radius: 60px;
 }
 
 .nav-title {
     color: darkgray;
+    background-color: #762DBE;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     margin-right: 25px;
     list-style: none;
     height: 60px;
 }
 
+.nav-label {
+    background-color: #762DBE;
+}
+
 .nav-text {
+    background-color: transparent;
     display: flex-start;
     justify-content: start;
     align-items: center;
@@ -39,6 +46,7 @@
 }
 
 .nav-text a {
+    background-color: transparent;
     text-decoration: none;
     color: #f5f5f5;
     font-size: 18px;
@@ -48,23 +56,50 @@
     align-items: center;
     padding: 0 16px;
     border-radius: 4px;
+    width: 110%;
+    transition: 850ms;
+}
+
+#active.nav-text a {
+    margin-left: 15px;
+    color: #762DBE;
+    fill: #762DBE;
+    background-color: whitesmoke !important;
+    border-radius: 4px;
+    height: 110%;
+    width: 110%;
+    transition: 850ms;
+}
+
+.logo-svg {
+    position: relative;
+    margin-left: 30px;
+    bottom: 20px;
+}
+
+#active.nav-text svg {
+    color: #762DBE;
+    fill: #762DBE;
 }
 
 .nav-text a:hover {
-    background-color: #1a83ff;
+    margin-left: 15px;
+    color: #762DBE;
+    background-color: whitesmoke !important;
+    border-radius: 4px;
+    height: 110%;
+    width: 110%;
+}
+
+.nav-text svg:hover {
+    color: #762DBE;
 }
 
 .nav-menu-items {
+    position: relative;
+    right: 30px;
+    background-color: transparent;
     width: 100%;
-}
-
-.navbar-toggle {
-    background-color: rgb(49, 49, 49);
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
 }
 
 span {

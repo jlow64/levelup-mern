@@ -6,45 +6,39 @@ import * as BiIcons from 'react-icons/bi';
 
 export const SidebarData = [
     {
-        title: 'Dashboard',
+        title: 'Welcome',
         path: '/dashboard',
         icon: <RiIcons.RiDashboardLine />,
-        className: 'nav-text',
-        logout: false
+        className: 'nav-text'
     },
     {
         title: 'Scratch',
         path: '/scratch',
-        icon: <IoIcons.IoRocketOutline />,
-        className: 'nav-text',
-        logout: false
+        icon: <IoIcons.IoRocketSharp />,
+        className: 'nav-text'
     },
     {
         title: 'My Projects',
         path: '/projects',
         icon: <AiIcons.AiOutlineProject />,
-        className: 'nav-text',
-        logout: false
+        className: 'nav-text'
     },
     {
         title: 'My Awards',
         path: '/awards',
         icon: <AiIcons.AiOutlineStar />,
-        className: 'nav-text',
-        logout: false
+        className: 'nav-text'
     },
     {
         title: 'Class Information',
         path: '/class_information',
         icon: <BiIcons.BiMessageError />,
-        className: 'nav-text',
-        logout: false
+        className: 'nav-text'
     },
     {
-        title: 'Log Out',
-        path: '/',
-        icon: <IoIcons.IoLogOutOutline />,
-        className: 'nav-text',
-        logout: true
+        title: 'Invite a Friend',
+        path: '/invite',
+        icon: <IoIcons.IoPersonAddSharp />,
+        className: 'nav-text'
     }
 ]

@@ -1,10 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700,500,600|Roboto:400,300|Montserrat:400,700,500,600");
+
 @media all and (min-width: 480px) {
     .Login {
-      padding: 60px 0;
+      background-color: white;
+      margin: auto;
+      padding: 30px 0;
+      width: 700px;
+      height: 620px;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      box-shadow: 0.5px 0.5px 0px 0px #787878;
     }
   
-    .Login form {
+    .Login Form {
+      background-color: transparent;
       margin: 0 auto;
-      max-width: 320px;
+      width: 400px;
+    }
+
+    .logo-group {
+      background-color: transparent;
+      margin-top: 90px;
+      margin-left: 80px;
+      margin-bottom: 30px;
+      align-items: flex-start;
+      display: flex;
+      min-width: 220px;
+    }
+
+    .Login Button, .Login Button:disabled {
+      background-color: #FF8B00;
+      border: 1px solid #969698;
+      height: 48px;
+      width: 100%;
+    }
+
+    .Login-label {
+      color: #787878;
+      background-color: transparent;
+      height: 48px;
+      font-size: 24px;
+      margin-top: 50px;
+      margin-bottom: -5px;
+    }
+    
+    .username-input, .password-input {
+      color: #787878;
+      background-color: transparent;
+      height: 48px;
+      font-size: 24px;
+      margin-bottom: 15px;
+      box-shadow: none;
+    }
+
+    .checkBox{
+      margin-top: 25px;
+      margin-left: 3px;
+      font: "Roboto";
+      font-size: 12px;
+      color: #444450;
+    }
+
+    .forgot-password {
+      margin-top: 25px;
+      margin-left: 35px;
+      font: "Roboto";
+      font-size: 12px;
+      color: #444450;
+    }
+
+    input[type=checkbox] {
+      margin-right: 15px;
+      transform: scale(1.5);
+      border: 1px solid #969698;
+    }
+
+    .bot-left-background {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    .top-left-background {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+    .top-right-background {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+    .bot-right-background {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
     }
 }
