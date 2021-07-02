@@ -12,7 +12,7 @@ export const SidebarData = [
         className: 'nav-text'
     },
     {
-        title: 'Scratch',
+        title: 'Launch Scratch',
         path: '/scratch',
         icon: <IoIcons.IoRocketSharp />,
         className: 'nav-text'
@@ -24,8 +24,8 @@ export const SidebarData = [
         className: 'nav-text'
     },
     {
-        title: 'My Awards',
-        path: '/awards',
+        title: 'My Report',
+        path: '/reports',
         icon: <AiIcons.AiOutlineStar />,
         className: 'nav-text'
     },

@@ -8,7 +8,7 @@ import Login from './components/Login';
 import Dashboard from './pages/Dashboard';
 import Scratch from './pages/Scratch';
 import Projects from './pages/Projects';
-import Awards from './pages/Awards';
+import Reports from './pages/Reports';
 import ClassInformation from './pages/ClassInformation';
 import Invite from './pages/Invite';
 
@@ -71,7 +71,7 @@ const App = () => {
             <Route path='/dashboard' exact render={(props) => (<Dashboard {...props} logout={logout} />)} />
             <Route path='/scratch' exact component={Scratch} />
             <Route path='/projects' exact component={Projects} />
-            <Route path='/awards' exact component={Awards} />
+            <Route path='/reports' exact component={Reports} />
             <Route path='/class_information' exact component={ClassInformation} />
             <Route path='/invite' exact component={Invite} />
           </Switch>
