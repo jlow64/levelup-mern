@@ -13,7 +13,7 @@ import ClassInformation from './pages/ClassInformation';
 import Invite from './pages/Invite';
 
 const App = () => {
-  const [loggedIn, setLoggedIn] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(false);
   const [users, setUsers] = useState([]);
   const [showModal, setShowModal] = useState(false);
 

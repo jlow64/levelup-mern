@@ -31,8 +31,7 @@ const Navbar = (props) => {
                             <li key={index} 
                                 className={item.className} 
                                 id={window.location.pathname === item.path? "active" : ""}
-                                onClick={function(){window.location.pathname=item.path} 
-                            }>
+                             >
                                 <Link to={item.path} >
                                     {item.icon}
                                     <span>{item.title}</span>
