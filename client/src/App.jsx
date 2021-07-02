@@ -68,7 +68,7 @@ const App = () => {
           <LogoutModal showModal={showModal} setShowModal={setShowModal} logout={logout} />
           <Switch>
             <Route exact path='/' />
-            <Route path='/dashboard' exact render={(props) => (<Dashboard {...props} logout={logout} />)} />
+            <Route path='/dashboard' component={Dashboard} />
             <Route path='/scratch' exact component={Scratch} />
             <Route path='/projects' exact component={Projects} />
             <Route path='/reports' exact component={Reports} />

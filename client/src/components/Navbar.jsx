@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
 
-const Navbar = (props) => {
+const Navbar = () => {
+    const location = useLocation();
     return (
         <>
         <IconContext.Provider value={{color: '#fff'}}>
@@ -30,8 +31,8 @@ const Navbar = (props) => {
                         return (
                             <li key={index} 
                                 className={item.className} 
-                                id={window.location.pathname === item.path? "active" : ""}
-                             >
+                                id={location.pathname === item.path? "active" : ""}
+                            >
                                 <Link to={item.path} >
                                     {item.icon}
                                     <span>{item.title}</span>
